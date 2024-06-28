@@ -1,6 +1,16 @@
 def main():
 
     numbers = []
+    for i in range(5):
+        number = int(input(f"Enter Number {i+1}:"))
+        numbers.append(number)
+    minval = numbers[0]
+    maxval = numbers[0]
+    for number in numbers:
+        if number < minval:
+            minval = number
+        if number > maxval:
+            maxval = number
     """
     ########################################
     Code Your Program here
